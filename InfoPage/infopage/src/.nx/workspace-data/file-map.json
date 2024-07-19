@@ -1,0 +1,120 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.4.4",
+  "deps": {},
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".nx/workspace-data/file-map.json",
+        "hash": "8666997494632848997"
+      },
+      {
+        "file": "app/item-card/item-card.component.html",
+        "hash": "3514481300553599266"
+      },
+      {
+        "file": "assets/imgs/Angular-Framework-e1649312852136.png",
+        "hash": "1877234936307083933"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~5a60a0f6",
+        "hash": "9938696625487472594"
+      },
+      {
+        "file": "nx.json",
+        "hash": "7504278795852065965"
+      },
+      {
+        "file": "app/app.config.server.ts",
+        "hash": "14750464052796800194"
+      },
+      {
+        "file": "assets/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "app/app.config.ts",
+        "hash": "11821239874568871925"
+      },
+      {
+        "file": "styles.scss",
+        "hash": "2866083945719690482"
+      },
+      {
+        "file": "assets/imgs/logo-extra-whitespace.png",
+        "hash": "10516880964907161369"
+      },
+      {
+        "file": "app/app.component.spec.ts",
+        "hash": "18352946778514600475"
+      },
+      {
+        "file": "app/app.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "app/app.component.ts",
+        "hash": "15968264048723582219"
+      },
+      {
+        "file": "app/item-card/item-card.component.ts",
+        "hash": "2551693396375240782"
+      },
+      {
+        "file": "assets/imgs/postgres-removebg-preview.png",
+        "hash": "127127350615389217"
+      },
+      {
+        "file": "favicon.ico",
+        "hash": "3988961587069885523"
+      },
+      {
+        "file": "main.ts",
+        "hash": "4927504514031276065"
+      },
+      {
+        "file": "assets/imgs/rest-api-icon.png",
+        "hash": "17437682571351870241"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json",
+        "hash": "9938696625487472594"
+      },
+      {
+        "file": "main.server.ts",
+        "hash": "11653607448136507287"
+      },
+      {
+        "file": "assets/imgs/Typescript_logo_2020.svg",
+        "hash": "17093305252677594981"
+      },
+      {
+        "file": "assets/imgs/logo_csharp.png",
+        "hash": "17168412333709378329"
+      },
+      {
+        "file": "app/app.routes.ts",
+        "hash": "12397496131277534773"
+      },
+      {
+        "file": "app/app.component.html",
+        "hash": "1941362278843667427"
+      },
+      {
+        "file": "index.html",
+        "hash": "11422089799592555327"
+      },
+      {
+        "file": "app/item-card/item-card.component.spec.ts",
+        "hash": "2923254032207892636"
+      },
+      {
+        "file": "app/item-card/item-card.component.scss",
+        "hash": "14392421575523302164"
+      }
+    ],
+    "projectFileMap": {}
+  }
+}
