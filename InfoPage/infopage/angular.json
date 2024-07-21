@@ -38,8 +38,8 @@
             "ssr": {
               "entry": "server.ts"
             },
-             "baseHref": "/infopage/",
-            "deployUrl": "/infopage/"
+             "baseHref": "/stack/",
+            "deployUrl": "/stack/"
           },
           "configurations": {
             "production": {
