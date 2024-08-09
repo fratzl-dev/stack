@@ -7,172 +7,16 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "assets/imgs/CSS3_logo.svg.png",
-        "hash": "15258750798102117096"
-      },
-      {
-        "file": "app/item-card/item-card.component.html",
-        "hash": "7576853482526931563"
-      },
-      {
-        "file": "assets/.gitkeep",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "main.server.ts",
-        "hash": "11653607448136507287"
-      },
-      {
-        "file": "assets/imgs/tech-Git-Icon-1788C.png",
-        "hash": "9086303637341433019"
-      },
-      {
-        "file": ".nx/workspace-data/project-graph.json~16a038d1",
-        "hash": "9938696625487472594"
-      },
-      {
-        "file": "nx.json",
-        "hash": "7504278795852065965"
-      },
-      {
-        "file": "assets/imgs/1674548785032-removebg-preview.png",
-        "hash": "14933140595089878675"
-      },
-      {
-        "file": "app/app.component.ts",
-        "hash": "4760567367037242328"
-      },
-      {
-        "file": "app/item-card/item-card.component.spec.ts",
-        "hash": "2923254032207892636"
-      },
-      {
-        "file": ".nx/workspace-data/project-graph.json~44cb0b3a",
-        "hash": "9938696625487472594"
-      },
-      {
-        "file": ".nx/workspace-data/file-map.json",
-        "hash": "5803441949565390400"
-      },
-      {
-        "file": "assets/imgs/Typescript_logo_2020.svg",
-        "hash": "17093305252677594981"
-      },
-      {
-        "file": "index.html",
-        "hash": "11422089799592555327"
-      },
-      {
-        "file": ".nx/workspace-data/project-graph.json",
-        "hash": "9938696625487472594"
-      },
-      {
-        "file": "app/app.component.html",
-        "hash": "2606111924684403036"
-      },
-      {
-        "file": ".nx/workspace-data/file-map.json~7e8011b6",
-        "hash": "14985587836082490344"
-      },
-      {
-        "file": ".nx/workspace-data/file-map.json~b65ee583",
-        "hash": "18401848880453791319"
-      },
-      {
-        "file": "app/app.component.spec.ts",
-        "hash": "18352946778514600475"
-      },
-      {
-        "file": ".nx/workspace-data/file-map.json~019a674e",
-        "hash": "14985587836082490344"
-      },
-      {
-        "file": "app/item-card/item-card.component.scss",
-        "hash": "1345238092028133787"
-      },
-      {
         "file": "assets/imgs/Unofficial_JavaScript_logo_2.svg.png",
         "hash": "15572927314469880308"
       },
       {
-        "file": "assets/imgs/rest-api-icon.png",
-        "hash": "17437682571351870241"
-      },
-      {
-        "file": ".nx/workspace-data/project-graph.json~5a3762b5",
-        "hash": "9938696625487472594"
-      },
-      {
-        "file": "assets/imgs/Angular-Framework-e1649312852136.png",
-        "hash": "1877234936307083933"
-      },
-      {
-        "file": "environments/environment.ts",
-        "hash": "16778677709796380904"
-      },
-      {
-        "file": "environments/environment.prod.ts",
-        "hash": "7015713415036876875"
-      },
-      {
-        "file": "assets/imgs/postgres-removebg-preview.png",
-        "hash": "127127350615389217"
-      },
-      {
-        "file": "styles.scss",
-        "hash": "15404921329528268957"
-      },
-      {
-        "file": "assets/imgs/Microsoft_.NET_logo.svg",
-        "hash": "15930553390309572177"
-      },
-      {
-        "file": "assets/imgs/logo-extra-whitespace.png",
-        "hash": "10516880964907161369"
-      },
-      {
-        "file": "app/item-card/item-card.component.ts",
-        "hash": "40673741111962083"
-      },
-      {
-        "file": "app/app.component.scss",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "assets/imgs/HTML-5-Badge-Logo.png",
-        "hash": "15342260071865106305"
-      },
-      {
-        "file": ".nx/workspace-data/project-graph.json~2fd142c6",
-        "hash": "9938696625487472594"
-      },
-      {
-        "file": "app/app.config.ts",
-        "hash": "11821239874568871925"
-      },
-      {
-        "file": ".nx/workspace-data/project-graph.json~6e9ca436",
-        "hash": "9938696625487472594"
-      },
-      {
-        "file": "app/app.routes.ts",
-        "hash": "12397496131277534773"
-      },
-      {
-        "file": "main.ts",
-        "hash": "4927504514031276065"
-      },
-      {
-        "file": ".nx/workspace-data/d/daemon.log",
-        "hash": "10835243004823022731"
-      },
-      {
-        "file": "app/app.config.server.ts",
-        "hash": "14750464052796800194"
-      },
-      {
         "file": "assets/imgs/logo_csharp.png",
         "hash": "17168412333709378329"
+      },
+      {
+        "file": "index.html",
+        "hash": "11422089799592555327"
       },
       {
         "file": "favicon.ico",
@@ -181,6 +25,166 @@
       {
         "file": ".nx/workspace-data/file-map.json~d82df055",
         "hash": "14985587836082490344"
+      },
+      {
+        "file": "styles.scss",
+        "hash": "15404921329528268957"
+      },
+      {
+        "file": ".nx/workspace-data/d/daemon.log",
+        "hash": "9002154172398722962"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~2fd142c6",
+        "hash": "9938696625487472594"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~b65ee583",
+        "hash": "18401848880453791319"
+      },
+      {
+        "file": "app/app.routes.ts",
+        "hash": "12397496131277534773"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~16a038d1",
+        "hash": "9938696625487472594"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~7e8011b6",
+        "hash": "14985587836082490344"
+      },
+      {
+        "file": "environments/environment.ts",
+        "hash": "16778677709796380904"
+      },
+      {
+        "file": "app/app.config.server.ts",
+        "hash": "14750464052796800194"
+      },
+      {
+        "file": "app/app.component.scss",
+        "hash": "17439228880047837078"
+      },
+      {
+        "file": "assets/imgs/Typescript_logo_2020.svg",
+        "hash": "17093305252677594981"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json",
+        "hash": "8865592670904312024"
+      },
+      {
+        "file": "app/app.config.ts",
+        "hash": "11821239874568871925"
+      },
+      {
+        "file": "assets/imgs/1674548785032-removebg-preview.png",
+        "hash": "14933140595089878675"
+      },
+      {
+        "file": "main.server.ts",
+        "hash": "11653607448136507287"
+      },
+      {
+        "file": "app/app.component.html",
+        "hash": "8205285250345314863"
+      },
+      {
+        "file": "app/item-card/item-card.component.spec.ts",
+        "hash": "2923254032207892636"
+      },
+      {
+        "file": "app/item-card/item-card.component.ts",
+        "hash": "40673741111962083"
+      },
+      {
+        "file": "assets/imgs/postgres-removebg-preview.png",
+        "hash": "127127350615389217"
+      },
+      {
+        "file": "nx.json",
+        "hash": "7504278795852065965"
+      },
+      {
+        "file": "assets/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "environments/environment.prod.ts",
+        "hash": "7015713415036876875"
+      },
+      {
+        "file": "assets/imgs/cypress.png",
+        "hash": "14609127372441095771"
+      },
+      {
+        "file": "assets/imgs/CSS3_logo.svg.png",
+        "hash": "15258750798102117096"
+      },
+      {
+        "file": "assets/imgs/HTML-5-Badge-Logo.png",
+        "hash": "15342260071865106305"
+      },
+      {
+        "file": "assets/imgs/rest-api-icon.png",
+        "hash": "17437682571351870241"
+      },
+      {
+        "file": "app/app.component.ts",
+        "hash": "4760567367037242328"
+      },
+      {
+        "file": "app/item-card/item-card.component.scss",
+        "hash": "1345238092028133787"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~019a674e",
+        "hash": "14985587836082490344"
+      },
+      {
+        "file": "assets/imgs/tech-Git-Icon-1788C.png",
+        "hash": "9086303637341433019"
+      },
+      {
+        "file": "assets/imgs/logo-extra-whitespace.png",
+        "hash": "10516880964907161369"
+      },
+      {
+        "file": "app/item-card/item-card.component.html",
+        "hash": "7576853482526931563"
+      },
+      {
+        "file": "assets/imgs/Microsoft_.NET_logo.svg",
+        "hash": "15930553390309572177"
+      },
+      {
+        "file": "app/app.component.spec.ts",
+        "hash": "18352946778514600475"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json",
+        "hash": "9938696625487472594"
+      },
+      {
+        "file": "main.ts",
+        "hash": "4927504514031276065"
+      },
+      {
+        "file": "assets/imgs/Angular-Framework-e1649312852136.png",
+        "hash": "1877234936307083933"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~5a3762b5",
+        "hash": "9938696625487472594"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~6e9ca436",
+        "hash": "9938696625487472594"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~44cb0b3a",
+        "hash": "9938696625487472594"
       }
     ],
     "projectFileMap": {}
