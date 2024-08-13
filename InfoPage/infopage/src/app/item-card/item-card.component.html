@@ -1,22 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Card Item Component</title>
-  
-</head>
-<body>
-  <div class="card-content">
-  <p-card class="card" [header]="title" [style]="{ 
-    width: '160px',
-    height: '180px'
-  }">
-    <ng-template pTemplate="header" class="place-content-center flex">
-        <img alt="Card" [src]="imgUrl" class="logo" />
-    </ng-template>
-  
-  </p-card>  
+<!-- item-card.component.html -->
+<div class="card-content">
+  <div class="card">
+    <div class="image-container">
+      <p-image 
+        [src]="imgUrl"
+        alt="Image" 
+        class="card-image"
+      />
+    </div>
+    <div class="card-title">
+      <p>{{title}}</p>
+    </div>
+  </div>  
 </div>
-</body>
-</html>

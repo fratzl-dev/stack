@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { CardModule } from 'primeng/card';
-
+import { ImageModule } from 'primeng/image';
 
 @Component({
   selector: 'app-item-card',
   standalone: true,
-  imports: [CardModule],
+  imports: [CardModule, ImageModule],
   templateUrl: './item-card.component.html',
   styleUrl: './item-card.component.scss'
 })

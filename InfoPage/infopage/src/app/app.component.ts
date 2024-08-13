@@ -5,29 +5,48 @@ import { ItemCardComponent } from "./item-card/item-card.component";
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { TableModule } from 'primeng/table';
+import { DividerModule } from 'primeng/divider';
+import { ImageModule } from 'primeng/image';
 
-interface Product {
-  code: string;
-  name: string;
-  category: string;
-  quantity: number;
+
+interface Tech {
+  title: string;
+  imgUrl: string;
 }
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ItemCardComponent, ButtonModule, TableModule],
+  imports: [
+    CommonModule,
+     RouterOutlet, 
+     ItemCardComponent, 
+     ButtonModule, 
+     TableModule, 
+     DividerModule, 
+     ImageModule,         
+    ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'infopage';
 
-  products: Product[] = [
-    { code: 'P001', name: 'Product 1', category: 'Category 1', quantity: 10 },
-    { code: 'P002', name: 'Product 2', category: 'Category 2', quantity: 20 },
-    { code: 'P003', name: 'Product 3', category: 'Category 3', quantity: 30 },
-    { code: 'P004', name: 'Product 4', category: 'Category 4', quantity: 40 }
+  techs: Tech[] = [
+    { title: '.NET', imgUrl: '/stack/assets/imgs/Microsoft_.NET_logo.svg'},
+    { title: 'TypeScript', imgUrl: '/stack/assets/imgs/Typescript_logo_2020.svg'},
+    { title: 'JavaScript', imgUrl: '/stack/assets/imgs/Unofficial_JavaScript_logo_2.svg.png'},
+
+    { title: 'C#', imgUrl: '/stack/assets/imgs/logo_csharp.png'},
+
+    { title: 'Angular', imgUrl: '/stack/assets/imgs/Angular-Framework-e1649312852136.png'},
+    { title: 'PostgreSQL', imgUrl: '/stack/assets/imgs/postgres-removebg-preview.png'},
+    { title: 'Gitlab', imgUrl: '/stack/assets/imgs/logo-extra-whitespace.png'},
+    { title: 'Git', imgUrl: '/stack/assets/imgs/tech-Git-Icon-1788C.png'},
+    { title: 'HTML5', imgUrl: '/stack/assets/imgs/html.webp'},
+    { title: 'CSS', imgUrl: '/stack/assets/imgs/CSS3_logo.svg.png'},
+    { title: 'Rest API', imgUrl: '/stack/assets/imgs/rest-api-icon.png'},
+    { title: 'Cypress E2E', imgUrl: '/stack/assets/imgs/cypress.webp'},
   ];
 
 }

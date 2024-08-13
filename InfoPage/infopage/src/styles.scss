@@ -6,3 +6,12 @@
 @tailwind utilities;
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
+
+
+
+
+/* Your custom styles */
+.p-card {
+  box-shadow: none !important;
+}
+
