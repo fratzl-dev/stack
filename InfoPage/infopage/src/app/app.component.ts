@@ -7,6 +7,7 @@ import { CardModule } from 'primeng/card';
 import { TableModule } from 'primeng/table';
 import { DividerModule } from 'primeng/divider';
 import { ImageModule } from 'primeng/image';
+import { SliderComponent } from './slider/slider.component';
 
 
 interface Tech {
@@ -18,16 +19,18 @@ interface Tech {
   selector: 'app-root',
   standalone: true,
   imports: [
-    CommonModule,
+     CommonModule,
      RouterOutlet, 
      ItemCardComponent, 
      ButtonModule, 
      TableModule, 
      DividerModule, 
-     ImageModule,         
+     ImageModule, 
+     SliderComponent,   
     ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  
 })
 export class AppComponent {
   title = 'infopage';
@@ -47,6 +50,7 @@ export class AppComponent {
     { title: 'CSS', imgUrl: '/stack/assets/imgs/CSS3_logo.svg.png'},
     { title: 'Rest API', imgUrl: '/stack/assets/imgs/rest-api-icon.png'},
     { title: 'Cypress E2E', imgUrl: '/stack/assets/imgs/cypress.webp'},
+    { title: 'Docker', imgUrl: '/stack/assets/imgs/docker.png'},
   ];
 
 }

@@ -1,0 +1,79 @@
+<div class="flex-wrap flex justify-center gap-4">
+    <div class="card">
+        <div class="mt-0 font-semibold text-xl text-center">
+            Employers
+        </div>
+        <p-carousel
+            [value]="products"
+            [numVisible]="1"
+            [numScroll]="1"
+            [circular]="true"
+            [responsiveOptions]="responsiveOptions">
+                <ng-template let-product pTemplate="item">
+                    <div class="border-1 surface-border border-round m-2 p-3">
+                        <div class="mb-3">
+                            <div class="relative mx-auto  flex justify-center">
+                                <img
+                                    src="/stack/assets/imgs/{{ product.image }}"
+                                    [alt]="product.name"
+                                    class="w-1/2 border-round"
+                                    />
+    
+                            </div>
+                        </div>
+                        <div class="mt-0 font-semibold text-xl">
+                            {{ product.name }}
+                        </div>
+                        <div class="flex justify-content-between align-items-center">
+                        <div class=" mb-3 font-medium">
+                            {{ product.description }}
+                        </div>
+                            <span>
+                                <p-button icon="pi pi-heart" severity="secondary" [outlined]="true" />
+                                <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />
+                            </span>
+                        </div>
+                    </div>
+                </ng-template>
+        </p-carousel>
+    
+    </div>
+    <div class="card">
+        <div class="mt-0 font-semibold text-xl text-center">
+            Education
+        </div>
+        <p-carousel
+            [value]="products"
+            [numVisible]="1"
+            [numScroll]="1"
+            [circular]="true"
+            [responsiveOptions]="responsiveOptions">
+                <ng-template let-product pTemplate="item">
+                    <div class="border-1 surface-border border-round m-2 p-3">
+                        <div class="mb-3">
+                            <div class="relative mx-auto  flex justify-center">
+                                <img
+                                    src="/stack/assets/imgs/{{ product.image }}"
+                                    [alt]="product.name"
+                                    class="w-1/2 border-round"
+                                    />
+    
+                            </div>
+                        </div>
+                        <div class="mt-0 font-semibold text-xl">
+                            {{ product.name }}
+                        </div>
+                        <div class="flex justify-content-between align-items-center">
+                        <div class=" mb-3 font-medium">
+                            {{ product.description }}
+                        </div>
+                            <span>
+                                <p-button icon="pi pi-heart" severity="secondary" [outlined]="true" />
+                                <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />
+                            </span>
+                        </div>
+                    </div>
+                </ng-template>
+        </p-carousel>
+    </div>
+</div>

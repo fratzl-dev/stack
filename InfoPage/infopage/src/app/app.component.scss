@@ -61,11 +61,12 @@
   flex-flow: column;
   justify-content: flex-start; /* Align items to the top */
   align-items: center;
-  padding: 1rem;
+  padding: 5rem;
   box-sizing: inherit;
   padding-top: 0; /* Ensure there is no padding at the top */
   margin-top: 0; /* Ensure there is no margin at the top */
   background-color: lightyellow;
+
 }
 
 .grid {
@@ -83,7 +84,7 @@
     justify-content: space-around;
     width: 100%;
     margin-top: 0; /* Remove any top margin */
-   
+    align-items: center;
     flex-direction: column;
   }
 

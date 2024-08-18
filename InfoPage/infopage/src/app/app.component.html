@@ -1,7 +1,7 @@
 <main class="main">
   <div class="flex flex-wrap place-content-center grid-nogutter surface-section text-800">
     <!-- Left Section: Text and Social Links -->
-    <div class="col-12 md:col-6 p-6 text-center md:text-left flex flex-col justify-center mt-8 md:mt-16">
+    <div class="col-span-6 md:col-6 p-6 text-center md:text-left flex flex-col justify-center mt-8 md:mt-16">
       <section>
         <span class="block text-4xl md:text-6xl font-bold mb-1">Fabian Fratzl, MSc</span>
         <div class="text-3xl md:text-6xl text-primary font-bold mb-3">Developer</div>
@@ -47,28 +47,29 @@
       <div class="mt-16"></div>
 
 
-      <div class="flex flex-wrap w-full md:w-[65rem] mx-auto content-center place-content-center">
-
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 w-3/4 mx-auto content-center place-content-center">
         @for (tech of techs; track tech) {
         <div class="col-span-1">
-          <app-item-card [imgUrl]="tech.imgUrl" [title]="tech.title">
-            
-          </app-item-card>
+            <app-item-card [imgUrl]="tech.imgUrl" [title]="tech.title">
+            </app-item-card>
         </div>
         }
-
-
-      </div>
+    </div>
+    
 
     </div>
 
-    
+    <div class="content">
+      <slider></slider>
+    </div>
+
+    <div class="mt-16"></div>
     
     <div class="right-side grid justify-center">
       <div class="pill-group">
         @for (item of [
-        { title: 'Explore the Docs', link: 'https://angular.dev' },
-        { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },
+        { title: 'Mail Contact', link: 'https://angular.dev' },
+        { title: 'LinkedIn', link: 'https://angular.dev/tutorials' },
         { title: 'CLI Docs', link: 'https://angular.dev/tools/cli' },
         { title: 'Angular Language Service', link: 'https://angular.dev/tools/language-service' },
         { title: 'Angular DevTools', link: 'https://angular.dev/tools/devtools' },
