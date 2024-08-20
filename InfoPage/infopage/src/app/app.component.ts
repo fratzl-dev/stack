@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { ItemCardComponent } from "./item-card/item-card.component";
@@ -33,6 +33,7 @@ interface Tech {
   
 })
 export class AppComponent {
+
   title = 'infopage';
 
   techs: Tech[] = [

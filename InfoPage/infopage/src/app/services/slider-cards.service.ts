@@ -2,7 +2,48 @@ import { Injectable } from '@angular/core';
     
 @Injectable()
 export class ProductService {
-    getProductsData() {
+    getEducationData() {
+        return [
+            {
+                id: '1000',
+                code: 'f230fh0g3',
+                name: 'HTL Pinkafeld',
+                description: 'Full Stack Developer',
+                image: 'Probando.png',
+                price: 65,
+                category: 'Accessories',
+                quantity: 24,
+               
+                rating: 5
+            },
+            {
+                id: '1001',
+                code: 'nvklal433',
+                name: 'Meierhofer',
+                description: 'Consultant',
+                image: 'meierhofer_ag_logo.jpeg',
+                price: 72,
+                category: 'Accessories',
+                quantity: 61,
+                
+                rating: 4
+            },
+            {
+                id: '1002',
+                code: 'zz21cz3c1',
+                name: 'Bearingpoint GmbH Graz',
+                description: 'System Analyst',
+                image: 'bearingpoint.png',
+                price: 79,
+                category: 'Fitness',
+                quantity: 2,
+                
+                rating: 3
+            },            
+        ];
+    }
+
+    getEmployersData() {
         return [
             {
                 id: '1000',
@@ -878,16 +919,21 @@ export class ProductService {
     }
 
     getProductsMini() {
-        return Promise.resolve(this.getProductsData().slice(0, 5));
+        return Promise.resolve(this.getEducationData().slice(0, 5));
     }
 
     getProductsSmall() {
-        return Promise.resolve(this.getProductsData().slice(0, 10));
+        return Promise.resolve(this.getEducationData().slice(0, 10));
     }
 
-    getProducts() {
-        return Promise.resolve(this.getProductsData());
+    getEducation() {
+        return Promise.resolve(this.getEducationData());
     }
+
+    getEmployers() {
+        return Promise.resolve(this.getEmployersData());
+    }
+
 
     getProductsWithOrdersSmall() {
         return Promise.resolve(this.getProductsWithOrdersData().slice(0, 10));
