@@ -43,14 +43,14 @@
   <div class="content">
     <div class="">
       <div class="mt-16"></div>
-      <span class="block text-3xl md:text-4xl font-bold mb-1 full-width-underline">Tech Stack</span>
+      <span class="block text-3xl md:text-4xl font-bold mb-1">Tech Stack</span>
     </div>
     <div class="left-side">
 
       <div class="mt-16"></div>
 
 
-      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 w-3/4 mx-auto content-center place-content-center">
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 w-3/4 mx-auto content-center place-content-center">
         @for (tech of techs; track tech) {
         <div class="col-span-1">
             <app-item-card [imgUrl]="tech.imgUrl" [title]="tech.title">
