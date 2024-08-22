@@ -55,18 +55,37 @@
   }
 
   main {
-  width: 100%;
-  min-height: 100vh; /* Ensure it takes full height of the viewport */
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-start; /* Align items to the top */
-  align-items: center;
-  padding: 5rem;
-  box-sizing: inherit;
-  padding-top: 0; /* Ensure there is no padding at the top */
-  margin-top: 0; /* Ensure there is no margin at the top */
-  background-color: lightyellow;
-
+    width: 100%;
+    min-height: 100vh; /* Ensure it takes full height of the viewport */
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+    padding: 5rem; /* Default padding for larger screens */
+    box-sizing: inherit;
+    padding-top: 0; /* Ensure there is no padding at the top */
+    margin-top: 0; /* Ensure there is no margin at the top */
+    background-color: lightyellow;
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 768px) {
+    main {
+      padding: 0rem; /* Set padding to 0rem on mobile devices */
+    }
+  }
+  
+.mobiletransform{
+  @media (max-width: 500px) {
+    
+      transform: scale(0.80);
+    
+  }
+  @media (max-width: 400px) {
+    
+    transform: scale(0.70);
+  
+}
 }
 
 .grid {
@@ -87,6 +106,9 @@
     align-items: center;
     flex-direction: column;
   }
+
+ 
+  
 
   .content h1 {
     margin-top: 1.75rem;
@@ -193,3 +215,13 @@
   margin-bottom: 1rem;
 }
 
+
+
+.job-desc {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  padding: 0 0.5rem; /* Optional padding around the title */
+  width: 100%;
+}

@@ -5,8 +5,8 @@
       <section>
         <span class="block text-4xl md:text-6xl font-bold mb-1">Fabian Fratzl, MSc</span>
         <div class="text-3xl md:text-6xl text-primary font-bold mb-3">Developer</div>
-        <p class="mt-0 mb-4 text-600 md:text-700 line-height-3">Angular Frontend Developer</p>
-        <p class="mt-0 mb-4 text-600 md:text-700 line-height-3">Full-Stack Developer</p>
+        <p class="mt-0 mb-4 job-desc">Angular Frontend Developer</p>
+        <p class="mt-0 mb-4 job-desc">Full-Stack Developer</p>
   
         <div class="social-links flex justify-center md:justify-start items-center gap-4 mt-4">
           <a href="https://github.com/angular/angular" aria-label="Github" target="_blank" rel="noopener">
@@ -41,13 +41,16 @@
 
 
   <div class="content">
-
+    <div class="">
+      <div class="mt-16"></div>
+      <span class="block text-3xl md:text-4xl font-bold mb-1">Tech Stack</span>
+    </div>
     <div class="left-side">
 
       <div class="mt-16"></div>
 
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 w-3/4 mx-auto content-center place-content-center">
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 w-3/4 mx-auto content-center place-content-center">
         @for (tech of techs; track tech) {
         <div class="col-span-1">
             <app-item-card [imgUrl]="tech.imgUrl" [title]="tech.title">
@@ -59,8 +62,17 @@
 
     </div>
 
-    <div class="content">
-      <slider></slider>
+    <div class="mt-16"></div>
+
+    <div class="flex-row flex-wrap flex justify-center gap-4 mobiletransform">
+      <slider 
+      [title]="'Employers'"
+      [data]="'Employers'"
+      ></slider>
+      <slider 
+      [title]="'Education'"
+      [data]="'Education'"
+      ></slider>
     </div>
 
     <div class="mt-16"></div>
@@ -70,10 +82,7 @@
         @for (item of [
         { title: 'Mail Contact', link: 'https://angular.dev' },
         { title: 'LinkedIn', link: 'https://angular.dev/tutorials' },
-        { title: 'CLI Docs', link: 'https://angular.dev/tools/cli' },
-        { title: 'Angular Language Service', link: 'https://angular.dev/tools/language-service' },
-        { title: 'Angular DevTools', link: 'https://angular.dev/tools/devtools' },
-        ]; track item.title) {
+                ]; track item.title) {
         <a class="pill" href="{{ item.link }}" target="_blank" rel="noopener">
           <span>{{ item.title }}</span>
           <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 -960 960 960" width="14" fill="currentColor">

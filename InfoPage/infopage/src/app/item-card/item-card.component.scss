@@ -17,6 +17,11 @@
     box-sizing: inherit;
     position: relative;
   }
+  @media (min-width: 768px) {
+    .main {
+     padding: 0rem;
+    }
+  }
 
   :host {
     display: flex;
@@ -60,6 +65,8 @@
     margin-top: 0.5rem;
     text-align: center;
     font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
     padding: 0 0.5rem; /* Optional padding around the title */
     width: 100%;
   }
@@ -81,6 +88,9 @@
     align-items: center;
     text-align: center;
     text-align: -webkit-center;
+
+   
+
   }
   .logo {
     min-width: 80px;
@@ -152,6 +162,14 @@
       width: 100%;
       background: var(--red-to-pink-to-purple-horizontal-gradient);
       margin-block: 1.5rem;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .card-content {       
+        padding: 1rem; /* Reduce padding to fit better on small screens */
+        transform: scale(0.75); /* Scale the card down a bit */
     }
   }
 

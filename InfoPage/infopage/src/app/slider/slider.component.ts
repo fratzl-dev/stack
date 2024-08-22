@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
@@ -27,17 +27,34 @@ export interface Product {
   styleUrl: './slider.component.scss',
   providers: [ProductService]
 })
-export class SliderComponent {
+export class SliderComponent{
+  @Input() title!: string;
+  @Input({ required: true }) data!: string;
+
   products!: Product[];
 
   responsiveOptions: any[] | undefined;
 
   constructor(private productService: ProductService) {}
 
+ 
+
   ngOnInit() {
-      this.productService.getProductsSmall().then((products) => {
-          this.products = products;
-      });
+    console.log(this.data);
+    if(this.data === 'Education')
+    {
+        this.productService.getEducation().then((products) => {
+            this.products = products;
+        });
+    }
+    if (this.data === 'Employers') {
+        this.productService.getEmployers().then((products) => {
+            this.products = products;
+        });
+    } else {
+        console.log('error');
+    }
+      
 
       this.responsiveOptions = [
           {

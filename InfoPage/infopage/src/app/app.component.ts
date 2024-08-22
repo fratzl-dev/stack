@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { ItemCardComponent } from "./item-card/item-card.component";
@@ -33,6 +33,7 @@ interface Tech {
   
 })
 export class AppComponent {
+
   title = 'infopage';
 
   techs: Tech[] = [
@@ -43,7 +44,7 @@ export class AppComponent {
     { title: 'C#', imgUrl: '/stack/assets/imgs/logo_csharp.png'},
 
     { title: 'Angular', imgUrl: '/stack/assets/imgs/Angular-Framework-e1649312852136.png'},
-    { title: 'PostgreSQL', imgUrl: '/stack/assets/imgs/postgres-removebg-preview.png'},
+    { title: 'PostgreSQL', imgUrl: '/stack/assets/imgs/postgres-removebg-preview.svg'},
     { title: 'Gitlab', imgUrl: '/stack/assets/imgs/logo-extra-whitespace.png'},
     { title: 'Git', imgUrl: '/stack/assets/imgs/tech-Git-Icon-1788C.png'},
     { title: 'HTML5', imgUrl: '/stack/assets/imgs/html.webp'},
@@ -51,6 +52,7 @@ export class AppComponent {
     { title: 'Rest API', imgUrl: '/stack/assets/imgs/rest-api-icon.png'},
     { title: 'Cypress E2E', imgUrl: '/stack/assets/imgs/cypress.webp'},
     { title: 'Docker', imgUrl: '/stack/assets/imgs/docker.png'},
+    { title: 'Browserstack', imgUrl: '/stack/assets/imgs/BrowserStack.svg'},
   ];
 
 }
