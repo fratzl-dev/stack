@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { ItemCardComponent } from "./item-card/item-card.component";
@@ -8,6 +8,7 @@ import { TableModule } from 'primeng/table';
 import { DividerModule } from 'primeng/divider';
 import { ImageModule } from 'primeng/image';
 import { SliderComponent } from './slider/slider.component';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 
 interface Tech {
@@ -25,15 +26,26 @@ interface Tech {
      ButtonModule, 
      TableModule, 
      DividerModule, 
-     ImageModule, 
+     ImageModule,
      SliderComponent,   
     ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  
+  animations: [
+    trigger('jiggle', [
+      state('normal', style({ transform: 'rotate(0deg)' })),
+      state('jiggling', style({ transform: 'rotate(20deg)' })),
+      transition('normal => jiggling', [
+        animate('0.5s')
+      ]),
+      transition('jiggling => normal', [
+        animate('0.5s')
+      ])
+    ])
+  ]
 })
-export class AppComponent {
-
+export class AppComponent implements OnInit{
+  jiggleStates: string[] = [];
   title = 'infopage';
 
   techs: Tech[] = [
@@ -54,5 +66,27 @@ export class AppComponent {
     { title: 'Docker', imgUrl: '/stack/assets/imgs/docker.png'},
     { title: 'Browserstack', imgUrl: '/stack/assets/imgs/BrowserStack.svg'},
   ];
+
+  ngOnInit(): void {
+    this.initializeJiggleStates();
+    this.startJiggling();
+  }
+
+  initializeJiggleStates(): void {
+    this.jiggleStates = this.techs.map(() => 'normal');
+  }
+
+  startJiggling(): void {
+    this.jiggleStates.forEach((_, index) => {
+      setTimeout(() => {
+        this.jiggleStates[index] = 'jiggling';
+        setTimeout(() => {
+          this.jiggleStates[index] = 'normal';
+        }, 800); // Adjust the duration as needed
+      }, index * 20);
+    });
+  }
+
+  
 
 }

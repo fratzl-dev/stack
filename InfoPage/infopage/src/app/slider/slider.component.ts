@@ -5,7 +5,6 @@ import { TagModule } from 'primeng/tag';
 import { ProductService } from '../services/slider-cards.service';
 
 
-
 export interface Product {
   id?: string;
   code?: string;
@@ -19,10 +18,14 @@ export interface Product {
   rating?: number;
 }
 
+
+
+
 @Component({
   selector: 'slider',
   standalone: true,
-  imports: [CarouselModule, ButtonModule, TagModule],
+  imports: [CarouselModule, ButtonModule, TagModule
+  ],
   templateUrl: './slider.component.html',
   styleUrl: './slider.component.scss',
   providers: [ProductService]
@@ -37,8 +40,12 @@ export class SliderComponent{
 
   constructor(private productService: ProductService) {}
 
- 
+  isAnimating = false;
 
+  toggleAnimation() {
+    this.isAnimating = !this.isAnimating;
+  }
+ 
   ngOnInit() {
     console.log(this.data);
     if(this.data === 'Education')

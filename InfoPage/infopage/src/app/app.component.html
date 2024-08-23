@@ -33,7 +33,7 @@
     </div>
     <!-- Right Section: Image -->
     <div class="col-12 md:col-6 overflow-hidden flex justify-center items-center mt-6 md:mt-0">
-      <img src="/stack/assets/imgs/1674548785032-removebg-preview.png" class="circle-image md:ml-auto block w-full max-w-xs md:max-w-full h-auto">
+      <img src="/stack/assets/imgs/1674548785032-removebg-preview.png" class="circle-image md:ml-auto block w-full max-w-xs md:max-w-full h-auto ">
     </div>
   </div>
   
@@ -52,7 +52,7 @@
 
       <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 w-3/4 mx-auto content-center place-content-center">
         @for (tech of techs; track tech) {
-        <div class="col-span-1">
+        <div class="col-span-1" [@jiggle]="jiggleStates[techs.indexOf(tech)]">
             <app-item-card [imgUrl]="tech.imgUrl" [title]="tech.title">
             </app-item-card>
         </div>

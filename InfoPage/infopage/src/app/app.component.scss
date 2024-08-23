@@ -225,3 +225,7 @@
   padding: 0 0.5rem; /* Optional padding around the title */
   width: 100%;
 }
+
+.circle-image:first-child {
+  animation: fadeIn 3s both;
+}
